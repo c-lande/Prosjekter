@@ -446,7 +446,7 @@ public class Legesystem{
       }else{
         System.out.println("________________________");
         System.out.println("Denne inputen er ikke gyldig! Prov igjen\n");
-        Main();
+        fortsett();
       }
     }
 
