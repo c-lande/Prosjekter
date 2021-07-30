@@ -1,10 +1,51 @@
+body{
+  background-color: #ffffff;
+}
+
+.Header{
+  height: 40px;
+}
+
+.dog_pic_front{
+  margin-right: 20px;
+
+}
+
+.meny_line{
+  background-color: #f7f2f2c9;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.logo_bar {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+/*Logoen*/
+.dog_pic_front{
+  height:90px;
+  mix-blend-mode: multiply;
+
+}
+
 /* Dropdown Button */
 .dropbtn {
-  background-color: #04AA6D;
-  color: white;
+  background-color: #f7f2f2c9;
+  color: black;
   padding: 16px;
   font-size: 16px;
   border: none;
+}
+
+.top_bar{
+  background-color: #ffffff;
+  padding: 0px;
+  font-size: 16px;
+  border: none;
+
 }
 
 /* The container <div> - needed to position the dropdown content */
@@ -21,6 +62,7 @@
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  opacity: 0.6;
 }
 
 /* Links inside the dropdown */
