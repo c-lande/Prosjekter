@@ -1,0 +1,36 @@
+body{
+    background-color: #ffffff;
+  }
+
+.meny_line{
+    background-color: #f7f2f2c9;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+.logo_bar {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+  }
+.dog_pic_front{
+    margin-right: 20px;
+  }
+  
+.Header{
+    height: 40px;
+  }
+
+  /*Logoen*/
+.dog_pic_front{
+    height:90px;
+    mix-blend-mode: multiply;
+  }
+
+.top_bar{
+  background-color: #ffffff;
+  padding: 0px;
+  font-size: 16px;
+  border: none;
+}
+  

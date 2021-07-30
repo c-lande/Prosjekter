@@ -1,18 +1,20 @@
-
-body{
-    background-color: #ffffff;
-  }
-  
-img {
+.profile_pic {
     display: block;
     height: 200px;
     width: 200px;
 
-    -moz-border-radius: 50%; /* or 50% */
-    border-radius: 50%; /* or 50% */
+    -moz-border-radius: 50%; 
+    border-radius: 50%; 
 
     background-color: black;
     color: white;
     text-align: center;
     font-size: 2em;
+  }
+  .UploadBtn{
+    background-color: #f7f2f2c9;
+    color: black;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
   }

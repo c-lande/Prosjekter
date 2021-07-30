@@ -5,20 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="profile_style.css">
-    <link rel="stylesheet" href="profile_script.js">
+    <link rel="stylesheet" href="general.css">
 
     <title>Document</title>
 </head>
 <body>
-    <h1>Her kommer hundeprofilen</h1>
+
     <p>
         <input type="file"  accept="image/*" name="image" id="file"  onchange="loadFile(event)" style="display: none;">
     </p>
+    <div class="top_bar">
+        
+        <div class = logo_bar>
+            <a href="forside.html">
+                <img src="img/dog_pic.png" type =".png" class="dog_pic_front">
+            </a>
+            <h1>Hundesentralen</h1>
+        </div>
+    </div>
+
+    <div class="meny_line">
+        <button type="button" class="UploadBtn" >
+            <label for="file" style="cursor: pointer;">Profilbilde</label>
+        </button>
+     
+    </div>
+   
+
     <p>
-        <label for="file" style="cursor: pointer;">Upload Image</label>
-    </p>
-    <p>
-        <img id="output" width="200" />
+        <img id="output" width="200" class = "profile_pic"/>
     </p>
     <script>
         var loadFile = function(event) {
