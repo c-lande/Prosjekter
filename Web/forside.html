@@ -8,38 +8,88 @@
     <link rel="stylesheet" href="general.css">
 
     <title>Document</title>
-</head>
-<body>
-    
-    <div class="top_bar">
-        
-        <div class = logo_bar>
-            <a href="forside.html">
-                <img src="img/dog_pic.png" type =".png" class="dog_pic_front">
-            </a>
-            <h1>Hundesentralen</h1>
-        </div>
-        <div class="meny_line">
-            <div class="dropdown">
-                <button class="dropbtn">Meny</button>
-                <div class="dropdown-content">
-                  <a href="profil.html">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
-              </div>
-              <div class="dropdown">
-                <button class="dropbtn">Min profil</button>
-                <div class="dropdown-content">
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
-              </div>
-        </div>
-       
 
+    <script>
+
+    window.onload = function(){
+      showSlides();
+    };
+    var slideIndex = 0;
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      setTimeout(showSlides, 5000); // Change image every 5 seconds
+    }
+    </script>
+</head>
+
+<body>
+
+  <div class="top_bar">
+        
+    <div class = logo_bar>
+      <a href="forside.html">
+        <img src="img/dog_pic.png" type =".png" class="dog_pic_front">
+      </a>
+      <h1>Hundesentralen</h1>
     </div>
+    <div class="meny_line">
+    <div class="dropdown">
+      <button class="dropbtn">Meny</button>
+      <div class="dropdown-content">
+        <a href="profil.html">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="#">Link 3</a>
+      </div>
+      </div>
+      <div class="dropdown">
+        <button class="dropbtn">Min profil</button>
+        <div class="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <img src="img/milo_1.jpg" style="width:100%">
+        <div class="text">Milo søker kjæreste!</div>
+        </div>
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="img/milo_2.jpg" style="width:100%">
+          <div class="text">Glad i vannet</div>
+          </div>
+          
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="img/milo_3.jpg" style="width:100%">
+          <div class="text">Ekte sjømann!</div>
+        </div>
+    </div>
+    <div style="text-align:center">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+
+
+
 
 
 </body>

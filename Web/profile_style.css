@@ -1,8 +1,5 @@
 .profile_pic {
     display: block;
-    height: 200px;
-    width: 200px;
-
     -moz-border-radius: 50%; 
     border-radius: 50%; 
 
@@ -10,6 +7,12 @@
     color: white;
     text-align: center;
     font-size: 2em;
+
+    /*Plasser bilde i midten*/
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    height: 200px;
   }
   .UploadBtn{
     background-color: #f7f2f2c9;
